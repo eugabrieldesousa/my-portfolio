@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { CSSProperties } from 'react';
 
 export type ItemOrbita = {
@@ -80,10 +81,12 @@ export default function OrbitaFotos({
               }
             >
               {item.src ? (
-                <img
+                <Image
                   src={item.src}
                   alt={item.rotulo || ''}
-                  className="h-full w-full object-cover"
+                  fill
+                  sizes="80px"
+                  className="object-cover"
                 />
               ) : (
                 <div

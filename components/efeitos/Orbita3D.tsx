@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export type ItemOrbita3D = {
   src?: string;
@@ -114,12 +115,12 @@ export default function Orbita3D({
             }}
           >
             {item.src ? (
-              <img
+              <Image
                 src={item.src}
                 alt={item.rotulo || ''}
-                loading="lazy"
-                decoding="async"
-                className="h-full w-full object-cover"
+                fill
+                sizes="80px"
+                className="object-cover"
               />
             ) : (
               <div
