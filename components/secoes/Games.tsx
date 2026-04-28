@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { srcImagem } from '@/lib/imagem';
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
@@ -52,7 +53,7 @@ export default function Games() {
             className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-creme/10 bg-fundo-2"
           >
             <Image
-              src="/crianca-1.jpeg"
+              src={srcImagem('/crianca-1.jpeg')}
               alt="Gabriel criança jogando"
               fill
               className="object-cover"

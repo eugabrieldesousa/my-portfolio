@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { srcImagem } from '@/lib/imagem';
 
 export type ItemOrbita3D = {
   src?: string;
@@ -116,7 +117,7 @@ export default function Orbita3D({
           >
             {item.src ? (
               <Image
-                src={item.src}
+                src={srcImagem(item.src)}
                 alt={item.rotulo || ''}
                 fill
                 sizes="80px"

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CSSProperties } from 'react';
+import { srcImagem } from '@/lib/imagem';
 
 export type ItemOrbita = {
   src?: string;
@@ -82,7 +83,7 @@ export default function OrbitaFotos({
             >
               {item.src ? (
                 <Image
-                  src={item.src}
+                  src={srcImagem(item.src)}
                   alt={item.rotulo || ''}
                   fill
                   sizes="80px"

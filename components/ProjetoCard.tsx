@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Projeto } from '@/data/projetos';
+import { srcImagem } from '@/lib/imagem';
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
@@ -24,7 +25,7 @@ export default function ProjetoCard({ projeto, indice }: Props) {
       <div className="relative aspect-[16/10] overflow-hidden">
         {projeto.imagem ? (
           <Image
-            src={projeto.imagem}
+            src={srcImagem(projeto.imagem)}
             alt={projeto.titulo}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110"

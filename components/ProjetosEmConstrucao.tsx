@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { projetosEmConstrucao } from '@/data/projetos';
+import { srcImagem } from '@/lib/imagem';
 import Secao from './Secao';
 
 const easing = [0.22, 1, 0.36, 1] as const;
@@ -45,7 +46,7 @@ export default function ProjetosEmConstrucao() {
               {projeto.imagem && (
                 <div className="relative mb-5 aspect-[16/9] overflow-hidden rounded-xl">
                   <Image
-                    src={projeto.imagem}
+                    src={srcImagem(projeto.imagem)}
                     alt={projeto.titulo}
                     fill
                     className="object-cover"

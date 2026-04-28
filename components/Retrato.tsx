@@ -3,6 +3,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { MouseEvent } from 'react';
+import { srcImagem } from '@/lib/imagem';
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
@@ -94,7 +95,7 @@ export default function Retrato() {
 
             <div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-creme/10 bg-fundo-2">
               <Image
-                src="/eu.jpeg"
+                src={srcImagem('/eu.jpeg')}
                 alt="Gabriel"
                 fill
                 className="object-cover"
