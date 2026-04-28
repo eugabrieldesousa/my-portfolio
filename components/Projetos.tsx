@@ -16,7 +16,7 @@ export default function Projetos() {
           encontra a <span className="italic text-coral">função</span>.
         </>
       }
-      descricao="Uma seleção de produtos digitais que desenhei e construí — de marcas íntimas a plataformas em escala."
+      descricao="Uma seleção de produtos digitais que desenhei e construí de marcas íntimas a plataformas em escala."
     >
       <div className="grid gap-6 md:grid-cols-2 md:gap-8">
         {projetos.map((p, i) => (

@@ -11,15 +11,15 @@ import { fotosOrbitaInterna, fotosOrbitaExterna } from '@/data/fotos';
 const easing = [0.22, 1, 0.36, 1] as const;
 
 const palavrasMarquee = [
-  'design system',
-  'motion design',
-  'tipografia',
-  'next.js',
-  'react',
-  'framer motion',
+  'front end',
+  'back end',
+  'banco de dados',
+  'identidade visual',
+  'ui/ux',
+  'confiança',
   'tailwind',
   'produto',
-  'identidade',
+  'serviço',
   'detalhe'
 ];
 
@@ -152,7 +152,7 @@ export default function Hero() {
               disponível
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-creme/10 bg-fundo/70 px-3 py-1.5 backdrop-blur">
-              <span className="text-laranja">▣</span> são paulo
+              <span className="text-laranja">▣</span> santa catarina
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-creme/10 bg-fundo/70 px-3 py-1.5 tabular-nums backdrop-blur">
               <span className="text-laranja">◴</span> {hora || '--:--'}
@@ -177,7 +177,7 @@ export default function Hero() {
             <br />
             experiências que{' '}
             <span className="italic">
-              <TextoBrilhante texto="ficam." />
+              <TextoBrilhante texto="ficam" />
             </span>
           </motion.h1>
 
@@ -187,8 +187,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.45, ease: easing }}
             className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-texto-suave sm:mt-6 sm:text-base"
           >
-            Sou Gabriel — desenho e construo produtos digitais com identidade
-            forte, movimento sutil e atenção obsessiva ao detalhe.
+            Me chamo Gabriel, faço seu projeto sair do papel e ele viver... ou melhor respirar
           </motion.p>
 
           <motion.div
@@ -222,9 +221,9 @@ export default function Hero() {
             className="mt-7 grid w-full max-w-md grid-cols-3 gap-2 sm:mt-9 sm:gap-3"
           >
             {[
-              { num: '5+', rotulo: 'anos' },
-              { num: '40+', rotulo: 'projetos' },
-              { num: '12', rotulo: 'clientes' }
+              { num: '+3', rotulo: 'anos' },
+              { num: '15+', rotulo: 'projetos' },
+              { num: '10', rotulo: 'clientes' }
             ].map((s) => (
               <div
                 key={s.rotulo}

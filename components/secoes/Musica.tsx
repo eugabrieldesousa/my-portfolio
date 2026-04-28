@@ -87,7 +87,7 @@ export default function Musica() {
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-texto-suave md:text-lg">
             Toco piano, escrevo arranjos e gravo teclado e synth para músicas.
-            Dou aulas particulares — ensino do absoluto iniciante ao
+            Dou aulas particulares ensino do absoluto iniciante ao
             intermediário avançado.
           </p>
           <ul className="mt-8 flex flex-wrap gap-2">

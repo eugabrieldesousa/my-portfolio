@@ -6,18 +6,18 @@ export type GrupoSkills = {
 export const skills: GrupoSkills[] = [
   {
     categoria: 'Frontend',
-    itens: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Framer Motion']
+    itens: ['O que for preciso para sua necessidade']
   },
   {
     categoria: 'Backend',
-    itens: ['Node.js', 'Python', 'PostgreSQL', 'Prisma', 'REST & GraphQL']
+    itens: ['O que for preciso para sua necessidade']
   },
   {
     categoria: 'Design',
-    itens: ['Figma', 'Design Systems', 'Tipografia', 'Motion', 'Branding']
+    itens: ['O que for preciso para sua necessidade']
   },
   {
     categoria: 'Ferramentas',
-    itens: ['Git', 'Vercel', 'Docker', 'Linear', 'Vitest']
+    itens: ['O que for preciso para sua necessidade']
   }
 ];

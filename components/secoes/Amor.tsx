@@ -12,7 +12,7 @@ export default function Amor() {
     const obs = new IntersectionObserver(
       (entradas) => {
         if (entradas[0].isIntersecting) {
-          setTimeout(() => setProgresso(72), 300);
+          setTimeout(() => setProgresso(43), 300);
         }
       },
       { threshold: 0.4 }
@@ -54,7 +54,7 @@ export default function Amor() {
           className="mt-5 font-serif text-creme tracking-tight"
           style={{ fontSize: 'clamp(2rem, 5vw, 3.75rem)', lineHeight: 1.05 }}
         >
-          e em casa, a melhor{' '}
+          e na companhia, a melhor{' '}
           <span className="italic text-coral">co-autora</span>.
         </motion.h2>
 
@@ -65,7 +65,7 @@ export default function Amor() {
           transition={{ duration: 0.7, delay: 0.15, ease: easing }}
           className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-texto-suave md:text-lg"
         >
-          Amo minha noiva — futura esposa. Tudo que faço aqui, faço melhor por
+          Amo minha namorada futura esposa. Tudo que faço aqui, faço melhor por
           causa dela.
         </motion.p>
 
@@ -94,7 +94,7 @@ export default function Amor() {
                   className="font-serif italic line-through decoration-creme/30"
                   style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}
                 >
-                  noiva
+                  namorada
                 </span>
                 <span className="font-mono text-laranja">→</span>
                 <span
@@ -126,9 +126,9 @@ export default function Amor() {
 
             <div className="mt-6 grid grid-cols-3 gap-2 font-mono text-[10px] uppercase tracking-wider">
               {[
-                { rotulo: 'pedido', estado: 'feito', ok: true },
-                { rotulo: 'casamento', estado: 'agendado', ok: true },
-                { rotulo: 'eternidade', estado: 'em curso', ok: false }
+                { rotulo: 'pedido', estado: 'a fazer', ok: true },
+                { rotulo: 'casamento', estado: 'a fazer', ok: true },
+                { rotulo: 'eternidade', estado: 'para toda', ok: false }
               ].map((item) => (
                 <div
                   key={item.rotulo}

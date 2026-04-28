@@ -9,7 +9,6 @@ const esportes = [
   { nome: 'tênis de mesa', icone: '🏓', cor: '#FF6B5B', destaque: true },
   { nome: 'basquete', icone: '🏀', cor: '#F5A24B' },
   { nome: 'corrida', icone: '🏃', cor: '#F4A8B0' },
-  { nome: 'natação', icone: '🏊', cor: '#FF7A1A' },
   { nome: 'vôlei', icone: '🏐', cor: '#F5A24B' }
 ];
 

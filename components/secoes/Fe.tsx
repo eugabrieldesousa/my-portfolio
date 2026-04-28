@@ -60,7 +60,7 @@ export default function Fe() {
           transition={{ duration: 0.7, delay: 0.15, ease: easing }}
           className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-texto-suave md:text-base"
         >
-          Sou cristão evangélico. É de onde vem o meu propósito — e a calma pra
+          Sou cristão evangélico. É de onde vem o meu propósito e a calma pra
           construir as coisas com cuidado.
         </motion.p>
 

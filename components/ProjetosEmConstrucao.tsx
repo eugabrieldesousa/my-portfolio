@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { projetosEmConstrucao } from '@/data/projetos';
 import Secao from './Secao';
 
@@ -41,6 +42,16 @@ export default function ProjetosEmConstrucao() {
             />
 
             <div className="relative">
+              {projeto.imagem && (
+                <div className="relative mb-5 aspect-[16/9] overflow-hidden rounded-xl">
+                  <Image
+                    src={projeto.imagem}
+                    alt={projeto.titulo}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )}
               <div className="flex items-center gap-3">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-laranja opacity-60" />

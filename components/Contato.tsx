@@ -6,9 +6,9 @@ const easing = [0.22, 1, 0.36, 1] as const;
 
 const sociais = [
   { label: 'Email', href: 'mailto:eugabrieldesousa@gmail.com', valor: 'eugabrieldesousa@gmail.com' },
-  { label: 'GitHub', href: 'https://github.com', valor: '@gabriel' },
-  { label: 'LinkedIn', href: 'https://linkedin.com', valor: 'in/gabriel' },
-  { label: 'Twitter', href: 'https://twitter.com', valor: '@gabriel' }
+  { label: 'GitHub', href: 'https://github.com/eugabrieldesousa', valor: '@gabriel' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/eugabrieldesousa/', valor: 'in/gabriel' },
+  { label: 'WhatsApp', href: 'https://wa.me/5547997314944', valor: '(47) 99731-4944' },
 ];
 
 export default function Contato() {

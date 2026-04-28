@@ -1,13 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
 const conquistas = [
-  { titulo: 'primeiro console', valor: 'PS1', ano: '2002' },
-  { titulo: 'gênero favorito', valor: 'RPG', ano: '∞' },
-  { titulo: 'plataforma atual', valor: 'PC + Switch', ano: 'agora' },
+  { titulo: 'primeiro console', valor: 'PS2', ano: '2010/11' },
+  { titulo: 'gênero favorito', valor: 'rogue-like', ano: '∞' },
+  { titulo: 'plataforma atual', valor: 'Switch', ano: 'agora' },
   { titulo: 'horas jogadas', valor: '∞', ano: 'lifetime' }
 ];
 
@@ -26,18 +27,18 @@ export default function Games() {
           className="text-center"
         >
           <span className="font-mono text-xs uppercase tracking-[0.25em] text-laranja/80">
-            games · desde 2002
+            games · desde 2010
           </span>
           <h2
             className="mt-5 font-serif text-creme tracking-tight"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.75rem)', lineHeight: 1.05 }}
           >
-            cresci com um <span className="italic text-laranja">controle</span>{' '}
+            cresci com um <span className="italic text-laranja">teclado/controle</span>{' '}
             na mão.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-texto-suave md:text-lg">
             Jogo desde criança. É de onde vem boa parte do meu repertório
-            visual — narrativa, ritmo, design de interface, atenção aos
+            visual narrativa, ritmo, design de interface, atenção aos
             detalhes mínimos.
           </p>
         </motion.div>
@@ -50,19 +51,12 @@ export default function Games() {
             transition={{ duration: 0.9, ease: easing }}
             className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-creme/10 bg-fundo-2"
           >
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'linear-gradient(135deg, #FF7A1A 0%, #FF6B5B 40%, #2A1610 100%)'
-              }}
-            />
-            <div
-              className="absolute inset-0 opacity-30 mix-blend-overlay"
-              style={{
-                backgroundImage:
-                  'radial-gradient(circle at 25% 25%, rgba(255,255,255,0.5), transparent 50%)'
-              }}
+            <Image
+              src="/crianca-1.jpeg"
+              alt="Gabriel criança jogando"
+              fill
+              className="object-cover"
+              priority
             />
             <div className="grao" />
 
@@ -77,14 +71,11 @@ export default function Games() {
               </div>
             </div>
 
-            <div className="absolute left-5 top-5 rounded-full border border-fundo/30 bg-fundo/40 px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-creme backdrop-blur">
-              foto · criança jogando
-            </div>
+
 
             <div className="absolute bottom-0 left-0 right-0 border-t border-fundo/20 bg-fundo/60 px-5 py-3 backdrop-blur">
               <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-creme">
                 <span>player 1</span>
-                <span>↳ substitua por foto em /public</span>
                 <span className="text-laranja animate-pulso-suave">●</span>
               </div>
             </div>

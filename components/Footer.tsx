@@ -9,7 +9,7 @@ export default function Footer() {
           © {ano} Gabriel de Sousa. Feito com cuidado.
         </span>
         <span className="font-mono">
-          desenhado e codado em <span className="text-laranja">são paulo</span>
+          desenhado e codado em <span className="text-laranja">joinville</span>
         </span>
       </div>
     </footer>

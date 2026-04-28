@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import { MouseEvent } from 'react';
 
 const easing = [0.22, 1, 0.36, 1] as const;
@@ -47,16 +48,15 @@ export default function Retrato() {
             olá, sou o <span className="italic text-laranja">Gabriel</span>.
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-texto-suave md:text-lg">
-            Trabalho com produto desde 2019. Acredito que software bom é como
-            tipografia boa: invisível quando funciona, inesquecível quando
-            encanta.
+            Trabalho com produto desde 2024. Acredito que software bom é como
+            ideia boa: se for boa ela é construida, caso não esquecida.
           </p>
           <ul className="mt-8 grid grid-cols-2 gap-4 max-w-md">
             {[
-              { rotulo: 'baseado em', valor: 'são paulo' },
-              { rotulo: 'foco atual', valor: 'frontend & motion' },
-              { rotulo: 'falo', valor: 'pt · en · es' },
-              { rotulo: 'idade', valor: '24 anos' }
+              { rotulo: 'baseado em', valor: 'santa catarina' },
+              { rotulo: 'foco atual', valor: 'sites e sistemas' },
+              { rotulo: 'falo', valor: 'pt · en' },
+              { rotulo: 'idade', valor: '21 anos' }
             ].map((info) => (
               <li
                 key={info.rotulo}
@@ -93,19 +93,12 @@ export default function Retrato() {
             <div className="absolute -inset-1 -z-[5] rounded-[2rem] bg-gradiente-quente opacity-80" />
 
             <div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-creme/10 bg-fundo-2">
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    'linear-gradient(135deg, #FF7A1A 0%, #FF6B5B 35%, #F4A8B0 70%, #F5A24B 100%)'
-                }}
-              />
-              <div
-                className="absolute inset-0 mix-blend-overlay"
-                style={{
-                  backgroundImage:
-                    'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.5), transparent 50%), radial-gradient(circle at 75% 80%, rgba(0,0,0,0.5), transparent 55%)'
-                }}
+              <Image
+                src="/eu.jpeg"
+                alt="Gabriel"
+                fill
+                className="object-cover"
+                priority
               />
 
               <div className="absolute inset-0 flex items-end justify-center pb-10">
@@ -149,8 +142,7 @@ export default function Retrato() {
           </motion.div>
 
           <div className="mt-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-texto-suave">
-            <span>↳ substitua por sua foto em /public</span>
-            <span className="text-laranja">●</span>
+
           </div>
         </motion.div>
       </div>

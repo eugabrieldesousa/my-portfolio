@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Projeto } from '@/data/projetos';
 
 const easing = [0.22, 1, 0.36, 1] as const;
@@ -21,9 +22,18 @@ export default function ProjetoCard({ projeto, indice }: Props) {
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-creme/8 bg-fundo-2/50 backdrop-blur-sm transition-colors hover:border-laranja/30"
     >
       <div className="relative aspect-[16/10] overflow-hidden">
-        <div
-          className={`absolute inset-0 bg-gradient-to-br ${projeto.gradiente} transition-transform duration-700 group-hover:scale-110`}
-        />
+        {projeto.imagem ? (
+          <Image
+            src={projeto.imagem}
+            alt={projeto.titulo}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        ) : (
+          <div
+            className={`absolute inset-0 bg-gradient-to-br ${projeto.gradiente} transition-transform duration-700 group-hover:scale-110`}
+          />
+        )}
         <div
           className="absolute inset-0 opacity-50 mix-blend-overlay"
           style={{

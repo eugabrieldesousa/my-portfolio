@@ -32,15 +32,14 @@ export default function Sobre() {
             className="font-serif text-creme"
             style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', lineHeight: 1.25 }}
           >
-            Trabalho na fronteira entre{' '}
-            <span className="italic text-laranja">design</span> e{' '}
-            <span className="italic text-coral">engenharia</span>, criando
-            produtos onde forma e função se reforçam.
+            Trabalho na ponte entre{' '}
+            <span className="italic text-laranja">tecnologia</span> e{' '}
+            <span className="italic text-coral">negócio</span>, criando
+            produtos onde fazem sentido pro seu dia a dia
           </p>
           <p className="max-w-2xl text-base leading-relaxed text-texto-suave md:text-lg">
-            Tenho cinco anos construindo interfaces para startups, estúdios e
-            marcas que se importam com cada detalhe — da grade tipográfica ao
-            ritmo de uma transição.
+            Tenho três anos construindo interfaces e sistemas para clientes de pequeno, medio e grande porte, 
+            que se importam com cada detalhe,desde tirar do papel ao custo.
           </p>
         </motion.div>
       </div>
